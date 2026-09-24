@@ -30,7 +30,7 @@ tanto no endereço do GitHub Pages quanto no domínio próprio.
 
 ## Pontos de edição rápida
 
-- **Foto do autor:** comentário `FOTOGRAFIA OFICIAL DO AUTOR` em `index.html`.
+- **Foto do autor:** `assets/img/totto-rodrigues.webp` (quadrada, 960×960); original em `originais/`.
 - **Obra nova sem capa:** use a placa `.capa-tipografica` (exemplo no comentário em `assets/css/site.css`).
 - **E-mail profissional:** comentário `E-MAIL PROFISSIONAL` em `index.html`.
 - **Atualizações de bastidores:** comentário `ATUALIZAÇÕES FUTURAS` em `index.html`.
