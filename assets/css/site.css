@@ -522,6 +522,12 @@ p:last-child { margin-bottom: 0; }
 
 /* Contato ---------------------------------------------------------------- */
 
+.contato-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 40px;
+  align-items: center;
+}
 .contato-texto { margin: 22px 0 0; color: var(--text-2); }
 .contato-link {
   display: inline-flex;
@@ -534,6 +540,14 @@ p:last-child { margin-bottom: 0; }
   transition: border-color .2s;
 }
 .contato-link:hover { border-color: var(--gold); }
+/* selo de assinatura: o fundo preto do emblema se funde à página (lighten) */
+.contato-selo {
+  width: clamp(120px, 13vw, 170px);
+  height: auto;
+  margin-right: clamp(0px, 5vw, 72px);
+  opacity: .85;
+  mix-blend-mode: lighten;
+}
 .contato-link small {
   font-size: .72rem;
   font-weight: 600;
@@ -621,6 +635,8 @@ p:last-child { margin-bottom: 0; }
   .obra-capa { width: min(240px, 70%); }
   .bastidores-grid { grid-template-columns: 1fr; }
   .bastidores-imagem { max-width: 240px; }
+  .contato-grid { grid-template-columns: 1fr; gap: 36px; }
+  .contato-selo { width: 110px; margin: 0; }
 }
 
 @media (max-width: 520px) {
