@@ -109,16 +109,25 @@ p:last-child { margin-bottom: 0; }
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
   font-family: var(--serif);
   font-size: 1.3rem;
   letter-spacing: .01em;
   color: var(--ivory);
   text-decoration: none;
   white-space: nowrap;
-  transition: opacity .35s, visibility .35s;
 }
-/* na home, a marca só aparece depois que o nome grande do hero sai da tela */
-.site-header.marca-oculta .brand { opacity: 0; visibility: hidden; }
+/* emblema TR: o fundo escuro da imagem se funde ao cabeçalho (lighten) */
+.brand-emblema {
+  width: 44px;
+  height: 44px;
+  mix-blend-mode: lighten;
+}
+.brand-nome { transition: opacity .35s, visibility .35s; }
+/* na home, o nome só aparece depois que o nome grande do hero sai da tela */
+.site-header.marca-oculta .brand-nome { opacity: 0; visibility: hidden; }
 
 .nav-list {
   display: flex;
