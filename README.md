@@ -39,10 +39,10 @@ tanto no endereço do GitHub Pages quanto no domínio próprio.
 
 ## Domínio (tottorodrigues.com.br)
 
-1. No painel do registro.br, configure o DNS do domínio:
-   - registros **A** de `tottorodrigues.com.br` para `185.199.108.153`, `185.199.109.153`,
-     `185.199.110.153` e `185.199.111.153`;
-   - registro **CNAME** de `www` para `supertotto.github.io`.
-2. No GitHub: *Settings → Pages → Custom domain* → `tottorodrigues.com.br` → salvar.
-   (Isso cria o arquivo `CNAME` no repositório.)
-3. Depois que o certificado for emitido, marque *Enforce HTTPS*.
+Configurado em 24/09/2026. O DNS fica no painel da Hostinger (nameservers `*.dns-parking.com`):
+
+- registros **A** de `@` para `185.199.108.153`, `185.199.109.153`, `185.199.110.153` e `185.199.111.153`;
+- registro **CNAME** de `www` para `supertotto.github.io`.
+
+No GitHub, *Settings → Pages* tem o domínio personalizado `tottorodrigues.com.br` com *Enforce HTTPS*
+ativo; o arquivo `CNAME` na raiz do repositório guarda essa configuração e não deve ser apagado.
