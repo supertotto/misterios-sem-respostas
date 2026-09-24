@@ -121,8 +121,9 @@ p:last-child { margin-bottom: 0; }
 }
 /* emblema TR: o fundo escuro da imagem se funde ao cabeçalho (lighten) */
 .brand-emblema {
-  width: 44px;
-  height: 44px;
+  width: 30px;
+  height: 30px;
+  opacity: .9;
   mix-blend-mode: lighten;
 }
 .brand-nome { transition: opacity .35s, visibility .35s; }

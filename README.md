@@ -28,6 +28,12 @@ tanto no endereço do GitHub Pages quanto no domínio próprio.
 5. Para Roda da Coruja: na home, troque `role="link" aria-disabled="true"` do botão
    "Conhecer o projeto" por `href="roda-da-coruja/"`.
 
+## Cache
+
+O GitHub Pages guarda CSS e JS por até 10 minutos. Ao alterar `assets/css/site.css` ou
+`assets/js/site.js`, aumente o número `?v=` nos links desses arquivos (home e `_modelos/pagina.html`)
+para o navegador baixar a versão nova junto com o HTML.
+
 ## Pontos de edição rápida
 
 - **Foto do autor:** `assets/img/totto-rodrigues.webp` (quadrada, 960×960); original em `originais/`.
