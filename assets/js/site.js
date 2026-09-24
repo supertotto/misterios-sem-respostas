@@ -21,6 +21,16 @@
     });
   }
 
+  // Marca do cabeçalho escondida enquanto o elemento indicado em data-marca-apos
+  // (na home, o nome grande do hero) estiver visível, para o nome não aparecer duas vezes
+  const alvoMarca = header && header.dataset.marcaApos && document.querySelector(header.dataset.marcaApos);
+  if (alvoMarca && 'IntersectionObserver' in window) {
+    header.classList.add('marca-oculta');
+    new IntersectionObserver(([entry]) => {
+      header.classList.toggle('marca-oculta', entry.isIntersecting);
+    }, { rootMargin: `-${header.offsetHeight}px 0px 0px 0px` }).observe(alvoMarca);
+  }
+
   // Linha sob o cabeçalho depois que a página rola
   if (header) {
     const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 8);
