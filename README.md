@@ -31,7 +31,7 @@ tanto no endereço do GitHub Pages quanto no domínio próprio.
 ## Pontos de edição rápida
 
 - **Foto do autor:** comentário `FOTOGRAFIA OFICIAL DO AUTOR` em `index.html`.
-- **Capa de Roda da Coruja:** comentário acima da placa tipográfica em `index.html`.
+- **Obra nova sem capa:** use a placa `.capa-tipografica` (exemplo no comentário em `assets/css/site.css`).
 - **E-mail profissional:** comentário `E-MAIL PROFISSIONAL` em `index.html`.
 - **Atualizações de bastidores:** comentário `ATUALIZAÇÕES FUTURAS` em `index.html`.
 - **Links de compra de Mistérios sem Respostas:** objeto `CONFIG` no fim de
