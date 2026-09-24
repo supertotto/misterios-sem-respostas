@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /_modelos/
+
+Sitemap: https://tottorodrigues.com.br/sitemap.xml

@@ -1,0 +1,82 @@
+<!doctype html>
+<!--
+  MODELO DE PÁGINA INTERNA DO SITE DO AUTOR
+  Para criar /livros/, /sobre/, /contato/, /roda-da-coruja/ etc.:
+    1. copie este arquivo para <nome-da-pagina>/index.html (ex.: roda-da-coruja/index.html);
+    2. preencha <title>, description, canonical e og:* ;
+    3. remova a linha <meta name="robots" content="noindex">;
+    4. escreva o conteúdo dentro de <main>;
+    5. adicione a nova URL em sitemap.xml.
+  Os caminhos "../" já apontam para a raiz do site a partir de uma pasta de primeiro nível.
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <script>document.documentElement.classList.add('js')</script>
+  <meta name="robots" content="noindex">
+
+  <title>Totto Rodrigues</title>
+  <meta name="description" content="">
+  <link rel="canonical" href="https://tottorodrigues.com.br/NOME-DA-PAGINA/">
+  <meta name="theme-color" content="#100e0c">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Totto Rodrigues">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="https://tottorodrigues.com.br/NOME-DA-PAGINA/">
+  <meta property="og:image" content="https://tottorodrigues.com.br/assets/img/og-totto-rodrigues.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" href="../assets/img/icons/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Source+Sans+3:wght@400;600&display=swap">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <script src="../assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../">Totto Rodrigues</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu"><span></span><span></span></button>
+      <nav id="menu-principal" class="site-nav" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="../">Início</a></li>
+          <li><a href="../#obras">Obras</a></li>
+          <li><a href="../#sobre">Sobre</a></li>
+          <li><a href="../misterios-sem-respostas/">Mistérios sem Respostas</a></li>
+          <li><a href="../#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- conteúdo da página: use <section class="section"><div class="container">…</div></section> -->
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p class="footer-marca">Totto Rodrigues · Escritor</p>
+      <nav class="footer-nav" aria-label="Rodapé">
+        <ul>
+          <li><a href="../">Início</a></li>
+          <li><a href="../#obras">Obras</a></li>
+          <li><a href="../#sobre">Sobre</a></li>
+          <li><a href="../misterios-sem-respostas/">Mistérios sem Respostas</a></li>
+          <li><a href="https://www.instagram.com/escritortotto/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </nav>
+      <p class="footer-copy">© <span data-ano-atual>2026</span> Totto Rodrigues. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
